@@ -1,0 +1,58 @@
+\documentclass{ximera}
+
+\input{preamble.tex}
+
+\author{Gregory Hartman \and Matthew Carr}
+\license{Creative Commons 3.0 By-NC}
+\acknowledgement{https://github.com/APEXCalculus}
+
+\begin{document}
+
+\begin{exercise}
+
+\outcome{Evaluate the limit as $x$ approaches a point where there is a vertical asymptote.}
+\outcome{Identify when a limit does not exist.}
+
+\tag{limit} 
+\tag{discontinuous}
+\tag{vertical asymptote}
+
+  Find 
+  \[
+  \displaystyle \lim_{x\to 2} \frac{x^2+7x+10}{x^2-4x+4}
+  \begin{prompt}
+  = \answer{\text{Limit does not exist}}.
+  \end{prompt}
+  \]
+    \begin{hint}
+     This function is \underline{not} continuous everywhere, but both the numerator and denominator are continuous everywhere as functions. Thus, if the limit of $\frac{x^2+7x+10}{x^2-4x+4}$ as $x\to{a}$ does not exist, then the denominator $x^2-4x+4$ must be zero at $a$. Does $x^2-4x+4=0$ when $x=2$? Does $x^2+7x+10=0$ at $x=2$ as well?
+    \end{hint}
+     \begin{hint}
+    	Take a look at the graph of the function
+    \begin{center}
+     \begin{tikzpicture}
+	\begin{axis}
+	[ymin=0,ymax=500, axis lines=center,xlabel=$x$,ylabel=$y$,every axis y 
+	label/.style={at=(current axis.above origin),anchor=south},every axis x label/.style={at=(current axis.right of origin),anchor=west},
+	domain=0:4,
+	yticklabels={},
+	ymajorgrids=true,
+	grid = major
+	]
+	\addplot[domain=0:197/100,very thick,smooth,samples=600]
+	{(\x^2+7*\x+10)/(\x^2-4*\x+4)};
+	\addplot[domain=203/100:4,very thick,smooth,samples=600]
+	{(\x^2+7*\x+10)/(\x^2-4*\x+4)};
+	\end{axis}
+       \end{tikzpicture}      
+      \end{center} 
+      Apply the limit law which says that, if both f $\lim\limits_{x\to a}f(x)$ and $\lim\limits_{x\to a}g(x)$ exist, then, if $\lim\limits_{x\to a}g(x)\ne0$, $\lim\limits_{x\to{a}}\frac{f(x)}{g(x)}=\frac{\lim\limits_{x\to a}f(x)}{\lim\limits_{x\to{a}}g(x)}$. iObserve what happens around (but not at) $x=2$.
+    \end{hint}
+    \begin{hint}
+    On the one hand, for $x>-2$, $x^2+7x+10>0$ and for all $x$, $x^2-4x+4>0$ (this latter result follows as the quadratic formula tells us that $x^2-4x+4=0$ only at $x=2$, so $x^2-4x+4=\p{x-2}^2$, and as we know, squared numbers are always positive); hence, for $x>-2$, $\frac{x^2+7x+10}{x^2-4x+4}>0$. On the other hand, for every number $a$ satisfying $-2<a<2$, the limit $\lim\limits_{x\to a}\frac{x^2+7x+10}{x^2-4x+4}$ exists because both the numerator and the denominator are continuous and nonzero for all $x$ satisfying $-2<x<2$. Applying several limit laws tells us that $\lim\limits_{x\to a}x^2+7x+10=\p{\lim\limits_{x\to a}x}^2+7\cdot\lim\limits_{x\to a}\p{x}+\lim\limits_{x\to a}\p{10}=a^2+7x+10$ and $\lim\limits_{x\to a}x^2-4x+4=\p{\lim\limits_{x\to a}x}^2-4\cdot\lim\limits_{x\to a}\p{x}+\lim\limits_{x\to a}\p{4}=a^2-4a+4$. Hence, as both limits of the preceeding functions exist and $a^2-4a+4\ne0$ for  $-2<a<2$, $\lim\limits_{x\to a}\frac{x^2+7x+10}{x^2-4x+4}=\frac{\lim\limits_{x\to a}x^2+7x+10}{\lim\limits_{x\to a}x^2-4x+4}=\frac{a^2+7a+10}{a^2-4a+4}$.
+    
+    Combining these two observations with the fact that the denominator becomes arbitrarily close to $0$ as $a$ approaches $2$, while the numerator approaches $28$, we see that $\lim\limits_{x\to 2^{-}}\frac{x^2+7x+10}{x^2-4x+4}$ is positive, but does not approach any finite number. We do not say that $\infty$ is a valid limit, so the limit does not exist, regardless of whether or not the limit as $x\to2^{+}$ tends towards $\infty$ as well.
+    \end{hint}
+\end{exercise}
+
+\end{document}

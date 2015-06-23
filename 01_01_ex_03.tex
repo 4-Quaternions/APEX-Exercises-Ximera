@@ -47,10 +47,10 @@
 	\end{axis}
        \end{tikzpicture}      
       \end{center}
-     Apply the limit law that $\lim\limits_{x\to{a}}\frac{f(x)}{g(x)}=\frac{\lim\limits_{x\to a}f(x)}{\lim\limits_{x\to{a}}g(x)}$ if $g(a)\ne0$ and both $f(x)$ and $g(x)$ are continuous at $x=a$. Observe what happens around $x=0$.
+     Apply the limit law which says that, if both f $\lim\limits_{x\to a}f(x)$ and $\lim\limits_{x\to a}g(x)$ exist, then, if $\lim\limits_{x\to a}g(x)\ne0$, $\lim\limits_{x\to{a}}\frac{f(x)}{g(x)}=\frac{\lim\limits_{x\to a}f(x)}{\lim\limits_{x\to{a}}g(x)}$. iObserve what happens around (but not at) $x=0$.
     \end{hint}
     \begin{hint}
-     On the one hand, $-3< x<0$, $x^2+3x<0$ and for $-1<x<0$, $x+1>0$; hence, for $-1<x<0$, $\frac{x+1}{x^2+3x}<0$. On the other hand, for every number $a$ satisfying $-1<a<0$, the limit  $\lim\limits_{x\to a}\frac{x+1}{x^2+3x}$ exists because both functions are continuous between $-1$ and $0$, noninclusive. Applying several limit laws tells us that $\lim\limits_{x\to a}x+1=\left(\lim\limits_{x\to a}x\right)+\left(\lim\limits_{x\to a}1\right)=a+1$ and $\lim\limits_{x\to a}x^2+3x=\left(\lim\limits_{x\to a}x\right)^2+3\cdot\left(\lim\limits_{x\to a}x\right)=a^2+3a$. Hence, $\lim\limits_{x\to a}\frac{x+1}{x^2+3x}=\frac{a+1}{a^2+3a}$.
+     On the one hand, for $-3< x<0$, $x^2+3x<0$ and for $-1<x<0$, $x+1>0$; hence, for $-1<x<0$, $\frac{x+1}{x^2+3x}<0$. On the other hand, for every number $a$ satisfying $-1<a<0$, the limit  $\lim\limits_{x\to a}\frac{x+1}{x^2+3x}$ exists because both the numerator and the denominator are continuous and nonzero for all $x$ satisfying $-1<x<0$. Applying several limit laws tells us that $\lim\limits_{x\to a}x+1=\left(\lim\limits_{x\to a}x\right)+\left(\lim\limits_{x\to a}1\right)=a+1$ and $\lim\limits_{x\to a}x^2+3x=\left(\lim\limits_{x\to a}x\right)^2+3\cdot\left(\lim\limits_{x\to a}x\right)=a^2+3a$. Hence, as both limits of the preceeding functions exist and $a^2+3a\ne0$ for $-1<a<0$, $\lim\limits_{x\to a}\frac{x+1}{x^2+3x}=\frac{\lim\limits_{x\to a}x+1}{\lim\limits_{x\to a}x^2+3x}=\frac{a+1}{a^2+3a}$.
      
      Combining these two observations with the fact that the denominator becomes arbitrarily close to $0$ as $a$ approaches $0$, while the numerator approaches $1$, we see that $\lim\limits_{x\to0^{-}}\frac{x+1}{x^2+3x}$ is negative, but does not approach any finite number. We do not say that $-\infty$ is a valid limit, so the limit does not exist, regardless of whether or not the limit as $x\to0^{+}$ tends towards $-\infty$ as well.
      \end{hint}
