@@ -19,9 +19,9 @@
 
   Find 
   \[
-  \displaystyle \lim_{x\to 2} \frac{x^2+7x+10}{x^2-4x+4}
+  \lim_{x\to 2} \p{\frac{x^2+7x+10}{x^2-4x+4}}
   \begin{prompt}
-  = \answer{\text{Limit does not exist}}.
+  = \answer{\text{DNE}}.
   \end{prompt}
   \]
     \begin{hint}
@@ -46,13 +46,13 @@
 	\end{axis}
        \end{tikzpicture}      
       \end{center} 
-      Apply the limit law which says that, if both f $\lim\limits_{x\to a}f(x)$ and $\lim\limits_{x\to a}g(x)$ exist, then, if $\lim\limits_{x\to a}g(x)\ne0$, $\lim\limits_{x\to{a}}\frac{f(x)}{g(x)}=\frac{\lim\limits_{x\to a}f(x)}{\lim\limits_{x\to{a}}g(x)}$. iObserve what happens around (but not at) $x=2$.
+      Apply the limit law which says that, if both $\lim_{x\to a}f(x)$ and $\lim_{x\to a}g(x)$ exist, then, if $\lim_{x\to a}g(x)\ne0$, $\lim_{x\to{a}}\frac{f(x)}{g(x)}=\frac{\lim_{x\to a}f(x)}{\lim_{x\to{a}}g(x)}$. Observe what happens around (but not at) $x=2$.
     \end{hint}
     \begin{hint}
-    On the one hand, for $x>-2$, $x^2+7x+10>0$ and for all $x$, $x^2-4x+4>0$ (this latter result follows as the quadratic formula tells us that $x^2-4x+4=0$ only at $x=2$, so $x^2-4x+4=\p{x-2}^2$, and as we know, squared numbers are always positive); hence, for $x>-2$, $\frac{x^2+7x+10}{x^2-4x+4}>0$. On the other hand, for every number $a$ satisfying $-2<a<2$, the limit $\lim\limits_{x\to a}\frac{x^2+7x+10}{x^2-4x+4}$ exists because both the numerator and the denominator are continuous and nonzero for all $x$ satisfying $-2<x<2$. Applying several limit laws tells us that $\lim\limits_{x\to a}x^2+7x+10=\p{\lim\limits_{x\to a}x}^2+7\cdot\lim\limits_{x\to a}\p{x}+\lim\limits_{x\to a}\p{10}=a^2+7x+10$ and $\lim\limits_{x\to a}x^2-4x+4=\p{\lim\limits_{x\to a}x}^2-4\cdot\lim\limits_{x\to a}\p{x}+\lim\limits_{x\to a}\p{4}=a^2-4a+4$. Hence, as both limits of the preceeding functions exist and $a^2-4a+4\ne0$ for  $-2<a<2$, $\lim\limits_{x\to a}\frac{x^2+7x+10}{x^2-4x+4}=\frac{\lim\limits_{x\to a}x^2+7x+10}{\lim\limits_{x\to a}x^2-4x+4}=\frac{a^2+7a+10}{a^2-4a+4}$.
+    First, notice that the quadratic equation gives only one solution to $x^2-4x+4=0$, namely $x=2$. Therefore, $x^2-4x+4=\p{x-2}^2$. Since the factorization of $x^2+7x+10$ does not contain two factors of $\p{x-2}$, there is a discontinuity at $x=2$. On the one hand, for $x>-2$, $x^2+7x+10>0$ and for all $x$, $x^2-4x+4>0$ (this latter result follows as the quadratic formula tells us that $x^2-4x+4=0$ only at $x=2$, so $x^2-4x+4=\p{x-2}^2$, and as we know, squared numbers are always positive); hence, for $x>-2$, $\frac{x^2+7x+10}{x^2-4x+4}>0$. On the other hand, for every number $a$ satisfying $-2<a<2$ or $a>2$, the limit $\lim_{x\to a}\frac{x^2+7x+10}{x^2-4x+4}$ exists because both the numerator and the denominator are continuous and nonzero for all $x$ satisfying $-2<x<2$ or $x>2$. Applying several limit laws tells us that $\lim_{x\to a}\p{x^2+7x+10}=\p{\lim_{x\to a}\p{x}}^2+7\cdot\lim_{x\to a}\p{x}+\lim_{x\to a}\p{10}=a^2+7a+10$ and $\lim_{x\to a}\p{x^2-4x+4}=\p{\lim_{x\to a}\p{x}}^2-4\cdot\lim_{x\to a}\p{x}+\lim_{x\to a}\p{4}=a^2-4a+4$. Hence, as both limits of the preceeding functions exist and $a^2-4a+4\ne0$, for  $-2<a<2$ or $a>2$, $\lim_{x\to a}\p{\frac{x^2+7x+10}{x^2-4x+4}}=\frac{\lim_{x\to a}\p{x^2+7x+10}}{\lim_{x\to a}\p{x^2-4x+4}}=\frac{a^2+7a+10}{a^2-4a+4}$.
     
-    Combining these two observations with the fact that the denominator becomes arbitrarily close to $0$ as $a$ approaches $2$, while the numerator approaches $28$, we see that $\lim\limits_{x\to 2^{-}}\frac{x^2+7x+10}{x^2-4x+4}$ is positive, but does not approach any finite number. We do not say that $\infty$ is a valid limit, so the limit does not exist, regardless of whether or not the limit as $x\to2^{+}$ tends towards $\infty$ as well.
-    \end{hint}
+    Combining these observations with the fact that the denominator becomes arbitrarily close to $0$ as $a$ approaches $2$, while the numerator approaches $28$, we see that $\lim_{x\to 2}\p{\frac{x^2+7x+10}{x^2-4x+4}}=\infty$, because, from both sides of $x=2$, $\frac{x^2+7x+10}{x^2-4x+4}$ approaches $\infty$.
+ \end{hint}
 \end{exercise}
 
 \end{document}

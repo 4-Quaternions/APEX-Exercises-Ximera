@@ -18,7 +18,7 @@
 
   Find 
   \[
-  \displaystyle \lim_{x\to 0} x^3-3x^2+x-5
+  \lim_{x\to 0} x^3-3x^2+x-5
   \begin{prompt}
   = \answer{-5}
   \end{prompt}
@@ -55,13 +55,18 @@
     Additional limit laws imply that
     \[
     \lim_{x\to 0} \left( x^3-3x^2+x-5 \right)  
-    = \lim_{x\to 0} \left( x \right)^3 -
+    = \p{\lim_{x\to 0} \left( x \right)}^3 -
     3\cdot\lim_{x\to 0} \left( x^2 \right) +
     \lim_{x\to 0} \left( x \right) -
     \lim_{x\to 0} \left(5\right).
     \]
     \begin{hint}
-     Evaluating $\left.x^3-3x^2+x-5\right|_{x=0}$ according to the limit laws gives $-5$.
+     Evaluating $\lim_{x\to 0} \left( x^3-3x^2+x-5 \right)  
+    = \p{\lim_{x\to 0} \left( x \right)}^3 -
+    3\cdot\lim_{x\to 0} \left( x^2 \right) +
+    \lim_{x\to 0} \left( x \right) -
+    \lim_{x\to 0} \left(5\right)$
+    we see the answer is $5$, since, as we know, $\lim_{x\to0}\p{x}=0$.
      \end{hint}
     
 \end{exercise}

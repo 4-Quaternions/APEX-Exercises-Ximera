@@ -19,7 +19,7 @@
 
   Find 
   \[
-  \displaystyle \lim_{x\to-1} \frac{x^2+8x+7}{x^2+6x+5}
+  \lim_{x\to-1}\p{ \frac{x^2+8x+7}{x^2+6x+5}}
   \begin{prompt}
   = \answer{1.5}.
   \end{prompt}
@@ -48,10 +48,10 @@
 	\end{axis}
        \end{tikzpicture}      
       \end{center}
-      There is a removable discontinuity at $x=-1$. This suggests something about the factorization of both polynomials $x^2+8x+7$ and $x^2+6x+5$. Recall that if both $\lim\limits_{x\to a}f(x)$ and $\lim\limits_{x\to a}g(x)$ exist, then, if $\lim\limits_{x\to a}g(x)\ne0$, then $\lim\limits_{x\to a}\frac{f(x)}{g(x)}=\frac{\lim\limits_{x\to a}f(x)}{\lim\limits_{x\to a}g(x)}$.
+      There is a removable discontinuity at $x=-1$. This suggests something about the factorization of both polynomials $x^2+8x+7$ and $x^2+6x+5$. Recall that if both $\lim_{x\to a}f(x)$ and $\lim_{x\to a}g(x)$ exist, then, if $\lim_{x\to a}g(x)\ne0$, then $\lim_{x\to a}\frac{f(x)}{g(x)}=\frac{\lim_{x\to a}f(x)}{\lim_{x\to a}g(x)}$.
     \end{hint}
     \begin{hint}
-     Notice that the quadratic equation tells us that $x^2+8x+7=0$ has solutions $-4\pm3$ and $x^2+6x+5=0$ has solutions $-3\pm{2}$. Thus, $x^2+8x+7=\left(x+1\right)\left(x+7\right)$ and $x^2+6x+5=\left(x+1\right)\left(x+5\right)$. Then for all $x\ne-1$, $\frac{x^2+8x+7}{x^2+6x+5}=\frac{x+7}{x+5}$, upon canceling the common factor of $x+1$. Since we are not asking what value $\frac{x^2+8x+7}{x^2+6x+5}$ takes at $x=-1$, but rather what value $\frac{x^2+8x+7}{x^2+6x+5}$ \underline{approaches} as $x\to-1$, it suffices in every case to look at $\lim\limits_{x\to-1}\frac{x+7}{x+5}$. We see that $\lim\limits_{x\to-1}x+7=6$ while $\lim\limits_{x\to-1}x+5=4$, and since $\lim\limits_{x\to-1}x+5\ne0$, $\lim\limits_{x\to-1}\frac{x+7}{x+5}=\frac{\lim\limits_{x\to-1}x+7}{\lim\limits_{x\to-1}x+5}=\frac{3}{2}$. Or, in decimal form, $1.5$.
+     Notice that the quadratic equation tells us that $x^2+8x+7=0$ has solutions $-4\pm3$ and $x^2+6x+5=0$ has solutions $-3\pm{2}$. Thus, $x^2+8x+7=\left(x+1\right)\left(x+7\right)$ and $x^2+6x+5=\left(x+1\right)\left(x+5\right)$. Then for all $x\ne-1$, $\frac{x^2+8x+7}{x^2+6x+5}=\frac{x+7}{x+5}$, upon canceling the common factor of $\p{x+1}$. Since we are not asking what value $\frac{x^2+8x+7}{x^2+6x+5}$ takes at $x=-1$, but rather what value $\frac{x^2+8x+7}{x^2+6x+5}$ \underline{approaches} as $x\to-1$, it suffices in every case to look at $\lim_{x\to-1}\p{\frac{x+7}{x+5}}$. We see that $\lim_{x\to-1}\p{x+7}=6$ while $\lim_{x\to-1}\p{x+5}=4$, and since $\lim_{x\to-1}\p{x+5}\ne0$, $\lim_{x\to-1}\p{\frac{x+7}{x+5}}=\frac{\lim_{x\to-1}\p{x+7}}{\lim_{x\to-1}\p{x+5}}=\frac{3}{2}$. Or, in decimal form, $1.5$.
     \end{hint}
 \end{exercise}
 
