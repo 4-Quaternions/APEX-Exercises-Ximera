@@ -1,0 +1,41 @@
+\documentclass{ximera}
+
+\input{preamble.tex}
+
+\author{Gregory Hartman \and Matthew Carr}
+\license{Creative Commons 3.0 By-NC}
+\acknowledgement{https://github.com/APEXCalculus}
+
+\begin{document}
+\begin{exercise}
+
+\outcome{State the precise definition of a limit.}
+\outcome{Understand the concept of a limit.}
+
+\tag{limit}
+\tag{formal definition of the limit}
+
+Let $f\p{x}=3-x$. Let $\epsilon>0$ be given. Verify that
+\[
+\lim_{x\to5}f\p{x}=-2
+\]
+by finding a suitable choice for $\delta>0$ such that if $\abs{x-5}<\delta$, then $\abs{f\p{x}-\p{-2}}<\epsilon$. Choose $\delta\begin{prompt} = \answer{\epsilon}.\end{prompt}$
+
+ \begin{hint}
+ Observe that $\abs{f\p{x}-\p{-2}}=\abs{3-x-\p{-2}}$ and $\abs{3-x-\p{-2}}=\abs{5-x}$. How should we choose $\delta>0$ such that if $0<\abs{x-5}<\delta$, then $\abs{5-x}<\epsilon$?
+ \end{hint}
+ \begin{hint}
+ Saying that $\abs{5-x}<\epsilon$ is equivalent to saying that the quantity $\p{5-x}$ satisfies $-\epsilon<\p{5-x}<\epsilon$. Multiplying by a negative number reverses the direction of the inequalities (if you don't remember this, convince yourself of it).
+ 
+ Therefore, upon multiplication of both sides of $-\epsilon<\p{5-x}$ by $-1$, we have $\p{-1\cdot\p{-\epsilon}}>\p{-1\cdot\p{5-x}}$, which is simply $\epsilon>\p{x-5}$. Similarly, the statement $\p{5-x}<\epsilon$, upon multiplication of both sides by $-1$ becomes $\p{-1\cdot\p{5-x}}>\p{-1\cdot\p{\epsilon}}$ which is simply $\p{x-5}>-\epsilon$.
+ \end{hint}
+ \begin{hint}
+ Combining the statements that $\epsilon>\p{x-5}$ and $\p{x-5}>-\epsilon$, we see they say that $-\epsilon<\p{x-5}<\epsilon$. Thus, if $-\epsilon<\p{5-x}<\epsilon$, then $-\epsilon<\p{x-5}<\epsilon$, and if $-\epsilon<\p{x-5}<\epsilon$, then $-\epsilon<\p{5-x}<\epsilon$. This makes sense, because, in fact, $\abs{x-5}=\abs{5-x}$ for any real number $x$. 
+ 
+ Thus, we can recast the question as follows. How should we choose $\delta>0$ such that if $0<\abs{x-5}<\delta$, then $\abs{x-5}<\epsilon$?
+ \end{hint}
+ \begin{hint}
+ Choose $\delta=\epsilon$. We see that this choice gives us the desired result. Namely, if $0<\abs{x-5}<\epsilon$, then $\abs{5-x}<\epsilon$. This follows because, from what we have shown, if $\abs{x-5}<\epsilon$, then $\abs{5-x}<\epsilon$.
+ \end{hint}
+\end{exercise}
+\end{document}
