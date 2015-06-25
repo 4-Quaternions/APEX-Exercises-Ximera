@@ -1,0 +1,35 @@
+\documentclass{ximera}
+
+\input{preamble.tex}
+
+\author{Gregory Hartman \and Matthew Carr}
+\license{Creative Commons 3.0 By-NC}
+\acknowledgement{https://github.com/APEXCalculus}
+
+\begin{document}
+\begin{exercise}
+
+\outcome{Calculate limits using the limit laws.}
+\outcome{Calculate limits using the Squeeze Theorem.}
+
+\tag{limit} 
+\tag{continuous}
+
+% BADBAD
+% I believe the author meant \lim_{x\to3^{-}} (i.e., 3^-) instead of 3^+. 
+
+Find 
+\[
+\lim_{x\to3^{-}}f\p{x}
+\begin{prompt}
+= \answer{9}.
+\end{prompt}
+\]
+where $6x-9\le f\p{x}\le x^2$ on $[0,3]$.
+
+\begin{hint}
+Use the Squeeze Theorem on the two bounds for $f\p{x}$. Observe both $\lim_{x\to3^{+}\p{6x-9}$ and $\lim_{x\to3^{+}\p{x^2}$. Note that we use $3^{-}$ here because we are only concerned with $f\p{x}$ on $[0,3]$, so it does not make sense to approach it from the right, because anything could happen then.
+\end{hint}
+
+\end{exercise}
+\end{document}
