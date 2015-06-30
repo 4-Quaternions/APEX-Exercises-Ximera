@@ -10,15 +10,12 @@
 \begin{exercise}
 
 \outcome{Calculate limits using the limit laws.}
-\outcome{Calculate limits of the form $0/0$.}
+\outcome{Calculate limits of the form 0/0.}
 \outcome{Calculate limits using the Squeeze Theorem.}
 
 \tag{limit} 
 \tag{indeterminate form}
 \tag{discontinuous}
-
-% BADBAD
-% Will they know these approximations and tricks?
 
 Find 
 \[
@@ -29,6 +26,10 @@ Find
 \]
 
 \begin{hint}
+Recall that $\lim_{x\to0}\p{\frac{\sin\p{x}}{x}}=1$. Multiplying $\frac{\sin\p{5x}}{8x}$ by a clever form of $1$, namely, $\frac{5}{5}$, gives us $\frac{5}{8}\cdot\p{\frac{\sin\p{5x}}{5x}}=\frac{\sin\p{5x}}{8x}$. Thus, $\lim_{x\to0}\p{\frac{5}{8}\cdot\p{\frac{\sin\p{5x}}{5x}}}=\lim_{x\to0}\p{\frac{\sin\p{5x}}{8x}}$. What can you say about $\lim_{x\to0}\p{\frac{5}{8}\cdot\p{\frac{\sin\p{5x}}{5x}}}$?
+\end{hint}
+\begin{hint}
+Let $y=5x$. Then since $\lim_{x\to0}\p{\frac{5}{8}\cdot\p{\frac{\sin\p{5x}}{5x}}}=\lim_{y\to0}\p{\frac{5}{8}\cdot\p{\frac{\sin\p{y}}{y}}}$, and we know that $\lim_{y\to0}\p{\frac{\sin\p{y}}{y}}=1$, applying the limit laws yields $\lim_{y\to0}\p{\frac{5}{8}\cdot\p{\frac{\sin\p{y}}{y}}}=\frac{5}{8}\cdot\lim_{y\to0}\p{\frac{\sin\p{y}}{y}}=\frac{5}{8}$.
 \end{hint}
 
 \end{exercise}

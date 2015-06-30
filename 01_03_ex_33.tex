@@ -10,15 +10,13 @@
 \begin{exercise}
 
 \outcome{Calculate limits using the limit laws.}
-\outcome{Calculate limits of the form $0/0$.}
+\outcome{Calculate limits of the form 0/0.}
 \outcome{Calculate limits using the Squeeze Theorem.}
 
 \tag{limit} 
 \tag{indeterminate form}
 \tag{discontinuous}
 
-% BADBAD
-% Should I use squeeze theorem or L'hopital for this one?
 
 Find 
 \[
@@ -29,6 +27,10 @@ Find
 \]
 
 \begin{hint}
+Recall that $\lim_{x\to0}\p{\frac{\sin\p{x}}{x}}=1$. Multiplying $\frac{\sin\p{3x}}{x}$ by a clever form of $1$, namely, $\frac{3}{3}$, gives us $3\cdot\p{\frac{\sin\p{3x}}{3x}}=\frac{\sin\p{3x}}{x}$. Thus, $\lim_{x\to0}\p{3\cdot\p{\frac{\sin\p{3x}}{3x}}}=\lim_{x\to0}\p{\frac{\sin\p{3x}}{x}}$. What can you say about $\lim_{x\to0}\p{3\cdot\p{\frac{\sin\p{3x}}{3x}}}$?
+\end{hint}
+\begin{hint}
+Let $y=3x$. Then since $\lim_{x\to0}\p{3\cdot\p{\frac{\sin\p{3x}}{3x}}}=\lim_{y\to0}\p{3\cdot\p{\frac{\sin\p{y}}{y}}}$, and we know that $\lim_{y\to0}\p{\frac{\sin\p{y}}{y}}=1$, applying the limit laws yields $\lim_{y\to0}\p{3\cdot\p{\frac{\sin\p{y}}{y}}}=3\cdot\lim_{y\to0}\p{\frac{\sin\p{y}}{y}}=3$.
 \end{hint}
 
 \end{exercise}

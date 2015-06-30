@@ -22,11 +22,15 @@ Find
 = \answer{1}.
 \end{prompt}
 \]
-where $3x-2\le f\p{x}\le x^3$.
-
+given that
+\[
+3x-2\le f\p{x}\le x^3.
+\]
 \begin{hint}
-Use the Squeeze Theorem on the two bounds for $f\p{x}$. Observe both $\lim_{x\to3^{+}\p{6x-9}$ and $\lim_{x\to3^{+}\p{x^2}$. Note that we use $3^{-}$ here because we are only concerned with $f\p{x}$ on $[0,3]$, so it does not make sense to approach it from the right, because anything could happen then.
+Use the Squeeze Theorem on the two bounds for $f\p{x}$. Observe that $\lim_{x\to1}\p{3x-2}=3\cdot\lim_{x\to1}\p{x}-\lim_{x\to1}\p{2}=1$ and $\lim_{x\to1}\p{x^3}=\p{\lim_{x\to1}\p{x}}^{3}=1$. 
 \end{hint}
-
+\begin{hint}
+Since we are given that $3x-2\le f\p{x}\le x^3$, and we have seen that $\lim_{x\to1}\p{3x-2}=\lim_{x\to1}\p{x^3}=1$, it follows by the Squeeze Theorem that $\lim_{x\to1}f\p{x}=1$.
+\end{hint}
 \end{exercise}
 \end{document}

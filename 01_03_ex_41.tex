@@ -17,19 +17,25 @@
 
 % BADBAD
 % I believe the author meant \lim_{x\to3^{-}} (i.e., 3^-) instead of 3^+. 
+% As discussed (e.g., that we don't expect them to know that \sqrt{x} is continuous at x=0)
+% I have extended the interval from [0,3] to [0,5] and let the limit be x\to3 
 
 Find 
 \[
-\lim_{x\to3^{-}}f\p{x}
+\lim_{x\to3}f\p{x}
 \begin{prompt}
 = \answer{9}.
 \end{prompt}
 \]
-where $6x-9\le f\p{x}\le x^2$ on $[0,3]$.
-
+given on the interval $\left[0,5\right]$ that
+\[
+6x-9\le f\p{x}\le x^2.
+\]
 \begin{hint}
-Use the Squeeze Theorem on the two bounds for $f\p{x}$. Observe both $\lim_{x\to3^{+}\p{6x-9}$ and $\lim_{x\to3^{+}\p{x^2}$. Note that we use $3^{-}$ here because we are only concerned with $f\p{x}$ on $[0,3]$, so it does not make sense to approach it from the right, because anything could happen then.
+Use the Squeeze Theorem on the two bounds for $f\p{x}$. Observe that $\lim_{x\to3}\p{6x-9}=6\cdot\lim_{x\to3}\p{x}-\lim_{x\to3}\p{9}=9$ and $\lim_{x\to3}\p{x^2}=\p{\lim_{x\to3}\p{x}}^2=9$.
 \end{hint}
-
+\begin{hint}
+Since we are given that $6x-9\le f\p{x}\le x^2$ on $\left[0,5\right]$, and we have seen that $\lim_{x\to3}\p{6x-3}=\lim_{x\to3}\p{x^2}=9$, it follows by the Squeeze Theorem that $\lim_{x\to3}f\p{x}=9$.
+\end{hint}
 \end{exercise}
 \end{document}

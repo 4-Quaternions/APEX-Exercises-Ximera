@@ -10,7 +10,7 @@
 \begin{exercise}
 
 \outcome{Calculate limits using the limit laws.}
-\outcome{Calculate limits of the form $0/0$.}
+\outcome{Calculate limits of the form 0/0.}
 \outcome{Calculate limits using the Squeeze Theorem.}
 
 \tag{limit} 
@@ -28,6 +28,10 @@ Find
 \]
 
 \begin{hint}
+For $x\ne0$, $-1\le\cos\p{\frac{1}{x^2}}\le1$. Therefore, multiplying the inequality by $\sin\p{x}$, we have that $-\sin\p{x}\le\sin\p{x}\cos\p{\frac{1}{x^2}}\le\sin\p{x}$. Apply the Squeeze Theorem to this inequality.
+\end{hint}
+\begin{hint}
+Since $\lim_{x\to0}\p{-\sin\p{x}}=\lim_{x\to0}\p{\sin\p{x}}=0$, by the Squeeze Theorem, it follows that $\lim_{x\to0}\p{\sin\p{x}\cos\p{\frac{1}{x^2}}}=0$.
 \end{hint}
 
 \end{exercise}

@@ -10,7 +10,7 @@
 \begin{exercise}
 
 \outcome{Calculate limits using the limit laws.}
-\outcome{Calculate limits of the form $0/0$.}
+\outcome{Calculate limits of the form 0/0.}
 \outcome{Calculate limits using the Squeeze Theorem.}
 
 \tag{limit} 
@@ -26,7 +26,10 @@ Find
 \]
 
 \begin{hint}
+Notice that $-x\le x\sin\p{\frac{1}{x}}\le{x}$ for all $x>0$ (emphatically, $x\ne0$) and $x\le x\sin\p{\frac{1}{x}}\le{-x}$ for all $x<0$ (again, emphatically, $x\ne0$). This can be restated as $-\abs{x}\le x\sin\p{\frac{1}{x}}\le\abs{x}$ for $x\ne0$. Our statement follows because $-1\le\sin\p{\frac{1}{x}}\le1$ for all $x\ne0$, hence, we obtained our inequality by multiplying by $x$. Apply the Squeeze Theorem to the inequality.
 \end{hint}
-
+\begin{hint}
+We see that $\lim_{x\to0}\p{-x}=\lim_{x\to0}\p{x}=0$. It follows, by the Squeeze Theorem, that $\lim_{x\to0}\p{x\sin\p{\frac{1}{x}}}=0$.
+\end{hint}
 \end{exercise}
 \end{document}
