@@ -9,10 +9,21 @@
 \begin{document}
 \begin{exercise}
 
+\outcome{Calculate limits from a graph (or state that the limit does not exist).}
 \outcome{Explain the relationship between one-sided and two-sided limits.}
+\outcome{Distinguish between limit values and function values.}
+\outcome{Identify when a limit does not exist.}
+
+
 
 \tag{limit} 
 
+% BADBAD
+% How should I do hints for this?
+% Can we have multiple questions 
+% within a single question?
+
+Let $f\p{x}$ be defined on the interval $\left[0,2\right]$, and no where else, whose graph is:
 \noindent\begin{minipage}[t]{.5\linewidth}
 \begin{center}
  \begin{tikzpicture}
@@ -40,30 +51,22 @@
        \end{tikzpicture}
     \end{center}
 \end{minipage}
-       
+
+Find
 \noindent\begin{minipage}[t]{.5\linewidth}
 \begin{enumerate}
-\item		$\lim_{x\to 1^-} f\p{x}$
-\item		$\lim_{x\to 1^+} f\p{x}$
-\item		$\lim_{x\to 1} f\p{x}$
+\item		$\lim_{x\to 1^-} f\p{x}\begin{prompt} = \answer{2}\end{prompt}$
+\item		$\lim_{x\to 1^+} f\p{x}\begin{prompt} = \answer{2}\end{prompt}$
+\item		$\lim_{x\to 1} f\p{x}\begin{prompt} = \answer{2}\end{prompt}$
 \end{enumerate}
 \end{minipage}
 \noindent\begin{minipage}[t]{.5\linewidth}
-\begin{enumerate}\addtocounter{enumii}{3}
-\item		$f\p{1}$
-\item		$\lim_{x\to 0^-} f\p{x}$
-\item		$\lim_{x\to 0^+} f\p{x}$
+\begin{enumerate}\addtocounter{enumi}{3}
+\item		$f\p{1}\begin{prompt} = \answer{1}\end{prompt}$
+\item		$\lim_{x\to 0^-} f\p{x}\begin{prompt} = \answer{\text{DNE}}\end{prompt}$
+\item		$\lim_{x\to 0^+} f\p{x}\begin{prompt} = \answer{1}\end{prompt}$
 \end{enumerate}
 \end{minipage}
-
-{\begin{enumerate}
-\item		2
-\item		2
-\item		2
-\item		1
-\item	 	As $f$ is not defined for $x<0$, this limit is not defined.
-\item		1
-\end{enumerate}}
 
 \end{exercise}
 \end{document}
