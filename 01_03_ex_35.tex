@@ -18,24 +18,25 @@
 \tag{discontinuous}
 
 % BADBAD 
-% Will they know this limit?
 
+It is a well known fact that $\lim_{x\to\infty}\left({\left({1+\frac{1}{x}}\right)^{x}}\right)=\lim_{x\to0}\left({(1+x)^{1/x}}\right)=e$.
 Find 
 \[
-\lim_{x\to0}\p{\frac{\ln\p{1+x}}{x}}
+\lim_{x\to0}\left({\frac{\ln(1+x)}{x}}\right)
 \begin{prompt}
 = \answer{1}.
 \end{prompt}
 \]
 
+
 \begin{hint}
-Recall that $\lim_{x\to\infty}\p{\p{1+\frac{1}{x}}^{x}}=e$ and, equivalently, $\lim_{x\to0}\p{\p{1+x}^{1/x}}=e$. Observe that we can rewrite this in a more illuminating way as $\frac{\ln\p{1+x}}{x}=x^{-1}\ln\p{1+x}$. Apply some properties of logarithms to this.
+Recall that $\lim_{x\to\infty}\left({\left({1+\frac{1}{x}}\right)^{x}}\right)=e$ and, equivalently, $\lim_{x\to0}\left({(1+x)^{1/x}}\right)=e$. Observe that we can rewrite this in a more illuminating way as $\frac{\ln(1+x)}{x}=x^{-1}\ln(1+x)$. Apply some properties of logarithms to this.
 \end{hint}
 \begin{hint}
-We know, from the properties of logarithms, that $b\ln\p{a}=\ln\p{a^b}$ when $a\ne0$, hence, $x^{-1}\ln\p{1+x}=\ln\p{\p{1+x}^{1/x}}$ as $x^{-1}=\frac{1}{x}$. Hence, $\ln\p{\p{1+x}^{1/x}}=\frac{\ln\p{1+x}}{x}$ when $x\ne0$. So $\lim_{x\to0}\ln\p{\p{1+x}^{1/x}}=\p{\lim_{x\to0}\frac{\ln\p{1+x}}{x}}$. Recall that $\ln\p{x}$ is continuous everywhere besides $x=0$. What can you say about $\lim_{x\to0}\ln\p{\p{1+x}^{1/x}}$?
+We know, from the properties of logarithms, that $b\ln(a)=\ln({a^b})$ when $a>0$. Hence, $x^{-1}\ln(1+x)=\ln({(1+x)^{1/x}})$ for $x>-1$ (and, of course, $x^{-1}=\frac{1}{x}$). Hence, $\ln({(1+x)^{1/x}})=\frac{\ln(1+x)}{x}$ when $x\ne0$. So $\lim_{x\to0}\left(\ln({(1+x)^{1/x}})\right)=\lim_{x\to0}\left(\frac{\ln(1+x)}{x}\right)$. Recall that $\ln(x)$ is continuous everywhere besides $x=0$. What can you say about $\lim_{x\to0}\ln({(1+x)^{1/x}})$?
 \end{hint}
 \begin{hint}
-Let $y=\p{1+x}^{1/x}$. Then, since $\lim_{x\to0}\p{\p{1+x}^{1/x}}=e$, and $\ln\p{x}$ is continuous at $e$, it follows that $\lim_{x\to0}\p{\ln\p{\p{1+x}^{1/x}}}=\lim_{y\to e}\p{\ln\p{y}}=1$ and, hence, that $\lim_{x\to0}\p{\frac{\ln\p{1+x}}{x}}=1$.
+Let $y=(1+x)^{1/x}$. Then, since $\lim_{x\to0}\left({(1+x)^{1/x}}\right)=e$, and $\ln(x)$ is continuous at $e$, it follows that $\lim_{x\to0}\left({\ln({(1+x)^{1/x}}})\right)=\lim_{y\to e}\left({\ln(y)}\right)=1$ and, hence, that $\lim_{x\to0}\left({\frac{\ln(1+x)}{x}}\right)=1$.
 \end{hint}
 \end{exercise}
 \end{document}
